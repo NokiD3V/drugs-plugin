@@ -1,0 +1,26 @@
+main: org.wcc.Main
+name: MKVDrugs
+version: '0.1'
+description: Plugin add drugs
+load: POSTWORLD
+author: NokiD3V
+website: vk.com/nokoko12
+prefix: Drugs
+commands:
+  drugs:
+    description: Drugs config command
+    aliases:
+      - mkvdrugs
+    permission: drugs.admin
+    permission-message: You do not have permission!
+    usage: /<command> [reload]
+permissions:
+  drugs.usedrugs:
+    description: Allows use drugs
+    default: not op
+  drugs.createdrugs:
+    description: Allow create drugs
+    default: not op
+  drugs.admin:
+    description: Allow use admin commands in drugs
+    default: op

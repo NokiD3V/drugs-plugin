@@ -1,0 +1,15 @@
+# DRUGS PLUGIN
+# AUTHOR: NokiD3V
+# GITHUB: https://github.com/NokiD3V
+
+enabled: true
+
+cooldown: 60 # IN SECONDS
+prefix: '&e[MKVDrugs]'
+
+messages:
+  permissions: "You dont have permissions to do this!"
+  disabled: "Plugin is disabled by administrators"
+  cooldown: "You need rest before use again"
+  use: "You use %drug_name%"
+  denied: "You cant use it"
