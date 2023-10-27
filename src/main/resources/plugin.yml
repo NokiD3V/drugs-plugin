@@ -6,6 +6,7 @@ load: POSTWORLD
 author: NokiD3V
 website: vk.com/nokoko12
 prefix: Drugs
+api-version: 1.13
 commands:
   drugs:
     description: Drugs config command

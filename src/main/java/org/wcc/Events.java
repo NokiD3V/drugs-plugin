@@ -25,12 +25,6 @@ public class Events implements Listener {
     }
 
     @EventHandler
-    public void onPlayerJoin(PlayerJoinEvent event) {
-        Player p = event.getPlayer();
-        p.sendMessage("Hello, drugs turn on this server");
-    }
-
-    @EventHandler
     public void ballFiring(PlayerInteractEvent e) {
         Player p = e.getPlayer();
         Action a = e.getAction();
@@ -57,7 +51,6 @@ public class Events implements Listener {
                 p.addPotionEffect(new PotionEffect(SLOW, 20 * 90,2));
                 p.addPotionEffect(new PotionEffect(BLINDNESS, 20 * 30,1));
                 p.addPotionEffect(new PotionEffect(SLOW_DIGGING, 20 * 90,2));
-                p.addPotionEffect(new PotionEffect(NAUSEA, 20 * 90,1));
             }, 20L * 60); // amount to wait in ticks , 20 ticks = 1 second
             Bukkit.getScheduler().runTaskLater(plugin, () -> {
                 cooldowns.remove(p.getUniqueId().toString());
